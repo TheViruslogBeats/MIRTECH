@@ -1,0 +1,50 @@
+.MainLoginPage__Container {
+  position: fixed;
+  top: calc(50% - 15rem);
+  left: calc(50% - 7.5rem);
+  width: 18rem;
+  background-color: var(--main-color-600);
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 15px;
+  & div:first-child {
+    & img {
+      width: 8rem;
+    }
+  }
+}
+
+.MainLoginPage__form {
+  display: flex;
+  flex-direction: column;
+  & h1 {
+    color: var(--text-color);
+  }
+}
+
+.MainLoginPage__input{
+  text-align: none;
+  width: 230px;
+  height: 35px;
+  margin: .5rem auto;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 0 1rem;
+  background-color: white;
+}
+
+.MainLoginPage__Button{
+  width: 230px;
+	height: 35px;
+  margin: .5rem auto;
+	border: none;
+	background-color: #f2bd64;
+	padding: 7px 10px;
+	font-weight: 600;
+	border-radius: 6px;
+	cursor: pointer;
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+}

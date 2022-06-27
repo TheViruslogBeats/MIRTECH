@@ -1,0 +1,49 @@
+.PanelSideBar {
+  position: fixed;
+  width: 23rem;
+  background-color: var(--color-1);
+  color: var(--text-color);
+  height: calc(100vh - 4rem);
+  box-shadow: 4px 9px 8px -5px #000; 
+  & ul {
+    position: relative;
+    padding: 2rem 0;
+    width: 20rem;
+    margin: 0 auto;
+    list-style-type: none;
+    & li {
+      padding: 0.5rem 0;
+      font-size: 1.5rem;
+
+      & a {
+        color: var(--text-color);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-decoration: none;
+        & svg {
+          font-size: 3rem;
+        }
+        & p {
+          padding-left: 0.75rem;
+        }
+
+        &:hover {
+          background-color: var(--color-1-hover);
+        }
+      }
+    }
+  }
+  &.PanelSideBarClosed {
+    width: 6rem;
+    box-shadow: unset;
+    & ul {
+      width: 3rem;
+      & li {
+        & p {
+          display: none;
+        }
+      }
+    }
+  }
+}
